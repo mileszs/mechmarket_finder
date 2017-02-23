@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "redd"
-gem "colorize"
+gem "paint"
+gem "whirly"
 gem "terminal-table"
 gem "pry"
