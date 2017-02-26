@@ -20,7 +20,7 @@ class PostsTable
 
   def rows
     @posts.map do |post|
-      @row_class.new(post[:created], post[:title], post[:url]).to_a
+      @row_class.new(post[:created], post[:title], post[:url]).draw
     end
   end
 end

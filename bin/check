@@ -7,6 +7,6 @@ KEEBS = %w(Planck JD40 JD45 MiniVan Minorca Preonic MobiK Quark).freeze
 Whirly.start spinner: "dots", status: "Finding your keebs..."
 
 posts = Reddit.instance.find_new_usa_keebs(KEEBS)
-puts PostsTable.new(posts, PaintedTableRow).draw
+puts PostsTable.new(posts).draw
 
 Whirly.stop

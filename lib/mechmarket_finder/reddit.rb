@@ -10,6 +10,7 @@ class Reddit < SimpleDelegator
   end
 
   def find_new_usa_keebs(keebs)
-    subreddit_from_name("mechmarket").search("[US- AND (" + keebs.join(" OR ") + ")", sort: :new)
+    search_string = "[US- AND (" + keebs.join(" OR ") + ")"
+    subreddit_from_name("mechmarket").search(search_string, sort: :new)
   end
 end
